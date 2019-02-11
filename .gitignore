@@ -1,0 +1,5 @@
+*.pro
+*.pro.user
+-Failed
+*.depend
+-Log
