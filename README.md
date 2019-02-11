@@ -1,0 +1,2 @@
+# EquGen
+Basic equation generator
