@@ -1,5 +1,5 @@
 *.pro
 *.pro.user
--Failed
+.Failed
 *.depend
--Log
+.Log
