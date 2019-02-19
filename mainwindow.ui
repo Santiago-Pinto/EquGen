@@ -135,7 +135,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Compatible Determinado</string>
+     <string>Unica solucion</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="chkBoxCI">
@@ -148,7 +148,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Compatible Indeterminado</string>
+     <string>Infinitas soluciones</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="chkBoxInc">
@@ -161,7 +161,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Incompatible</string>
+     <string>Sin solucion</string>
     </property>
    </widget>
    <zorder>background</zorder>
