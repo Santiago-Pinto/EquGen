@@ -46,7 +46,7 @@ void MainWindow::on_btnGen_clicked()
         all_fine = false;
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::Critical);
-        msgBox.setText("Seleccione el tipo de ecuacion deseada: compatible determinada, indeterminada o incompatible");
+        msgBox.setText("Seleccione la cantidad de soluciones que desea para la ecuacion");
         msgBox.exec();
     }
 
