@@ -1,5 +1,6 @@
 #include "Generator.h"
 #include <fstream>
+#include <algorithm>
 #include <cstring>
 #include <time.h>
 #define PATH "input.txt"
@@ -38,17 +39,28 @@ void Generator::load(){
     input.close();
 }
 
-rationalNumber Generator::parse(string solution){
+rationalNumber Generator::parse(string input){
     string numerator, denominator;
-    size_t match = solution.find("/");
+    size_t match = input.find("/");
     if (match !=  string::npos){ //Check if it is rational
-        numerator = solution.substr(0, match);
-        denominator = solution.substr(match + 1);
+        numerator = input.substr(0, match);
+        denominator = input.substr(match + 1);
         rationalNumber number(-atoi(numerator.c_str()), atoi(denominator.c_str()));
         return number;
     }
+
+    match = input.find(",");
+    input.erase(std::remove(input.begin(), input.end(), ','), input.end()); //Removes the unwanted commas
+    if (match != string::npos){ //Rational but expressed with comma
+        string solution_den = "1";
+
+        //Adding as many 0's as the solution integer part digits
+        solution_den.append((input.length() - match), '0');
+        rationalNumber solution(-atoi(input.c_str()), atoi(solution_den.c_str()));
+        return solution;
+    }
     // Integer solution
-    return rationalNumber(-atoi(solution.c_str()),1);
+    return rationalNumber(-atoi(input.c_str()),1);
 }
 
 

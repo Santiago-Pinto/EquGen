@@ -25,7 +25,7 @@ class Generator{
         void select_coefficients_is(unsigned int(& vec)[10], Equation* const equ);
 
 
-        rationalNumber parse(std::string solution);
+        rationalNumber parse(std::string input);
 
 
     public:

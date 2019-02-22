@@ -1,0 +1,17 @@
+- Dificultad de las ecuaciones: Cantidad de terminos, x solo de un lado, solo 1 x, producto cruzado, cantidad de terminos, etc..
+
+- Sumar lineales (Con el enfoque en forma factorizada no aporta mucho, es solo sumar coeficientes principales)
+
+- Factorizacion de numeros que permita expresiones de la forma 8(x+2) = 2(4x+8) (Ver como manejar las fracciones, de ultima optar por factorizar solo el numerador)
+
+- Anda, pero no me gusta el operador * de la clase rationalNumber, hace un cambio sobre el signo de this, pero retorna un nuevo numero.
+
+- Si esta seleccionada la opcion compatible determinado, no deberia dejar que el usuario deje la solucion deseada en blanco.
+
+- Por ahi convendria que la responsabilidad de escribir la expresion lineal como un texto en latex pase a otra clase que asista al generador.
+
+- Modificacion grosa para despues (caso sistema compatible determinado): Usando en vez de la raiz y la pendiente, 2 puntos para formar la ecuacion de una recta, basta que todas las rectas pasen por el punto (solucion, random) para que la ecuacion tenga la solucion deseada, asi se disfraza mucho mas.
+
+- Parser para quitarle la responsabilidad de interpretar el texto ingresado al generador
+
+- Una clase que, dada una ecuacion terminada, verifique que este todo en orden. Esto vendria bien para quitarle al generador la responsabilidad de chequear que los coeficientes seleccionados van bien.
